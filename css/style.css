@@ -62,7 +62,7 @@ a {
 
 nav a:hover{
     border-top: 2px solid #0065FC;
-    color: #0065FC;
+    color: var(--main-color);
 }
 #header{
     display: flex;
@@ -128,8 +128,9 @@ nav{
    font-size: 16px;
    line-height: 21px;
    text-align: center;
-   color:#000;
    border: none;
+   color: #000;
+   opacity: 1;
 }
 .searchbutton-desktop{
     width: 33%;
@@ -319,7 +320,7 @@ nav{
 #activites-cards{
     display: flex;
     align-items: flex-start;
-    gap: 30px;    
+    gap: 30px;     
 }
 .a-card{
     width: 30%;
@@ -327,13 +328,13 @@ nav{
 .a-card article{    
     border-radius: 20px;
     box-shadow: 5px 5px 10px #dadada;
+    height: 439px;  
 }
 #activites-cards h3{
     font-size: 16px;
     font-weight: 700;
-    padding: 20px 19px 20px 19px;
+    padding: 10px 19px 20px 19px;
     margin: 0;
-    gap: 10px;
 }
 .a-card img{
     width: 100%;
@@ -394,7 +395,7 @@ nav{
         width: 30%;
     }
 
-    .populaires-cards .card-title, .card-title-h, .filters-list, #info, #headline p, header a, .activites-card-content h3, .footer-list{
+    .populaires-cards .card-title, .card-title-h, .filters-list, #info, #headline p, header a, #activites-cards h3, .footer-list{
         font-size: 14px;
     }
 
@@ -409,7 +410,7 @@ nav{
         flex-direction: column;
         align-items: flex-start;
     }
-    #activites-cards{
+    .a-card article{
         height: 270px;
     }
     .a-card img{
@@ -417,15 +418,17 @@ nav{
         object-fit: cover;
     }
     #activites-cards h3{
-      margin: 0;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      padding-top: 15px;
+      padding-left: 15px;
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body{
+    margin: 0;
+   }
+   
     .main-container{
       padding: 0;
     }
@@ -454,7 +457,7 @@ nav{
     border-bottom: 2px solid #0065FC;
    }
    #info-group{
-    margin-left: 14px;
+    margin-left: 20px;
    }
   .search{
     width: 335px;
@@ -507,16 +510,18 @@ nav{
     border-radius: 0;
     margin: 0;
     width: 100%;
+    height: 600px; 
   }
- .card{
-    width: 335%;
-    height: 146px;
+ .populaires-cards a{
+    width: 100%;
+    height: 146px;  
  }
  .card img{
     height: 146px;
  }
 .populaires-cards{
-    flex-direction: column;  
+    flex-direction: column; 
+    gap: 20px;
 }
 #hebergements{
     background-color: #ffffff;
@@ -537,6 +542,9 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+#activites-cards article{
+    height: 200px;
 }
 .a-card{
     width: 100%;
