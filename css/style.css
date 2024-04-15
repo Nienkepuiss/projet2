@@ -135,6 +135,9 @@ nav a:hover{
 input::placeholder{
     opacity: 1;
 }
+input::-webkit-input-placeholder{
+    color: #000
+}
 .searchbutton-desktop{
     width: 33%;
     height: 50px;
