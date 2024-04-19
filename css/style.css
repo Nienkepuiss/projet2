@@ -362,12 +362,14 @@ input::-webkit-input-placeholder{
 .footer{
     display: flex;
     background-color: #F2F2F2;
+    padding-left: 20px;
+    overflow-x: hidden;
 }
 .footer-content{
     display: flex;
     flex-direction: column;
     width: 33%;
-    padding: 20px;
+    justify-content: flex-start;
 }
 .footer-list{
     display: flex;
@@ -579,7 +581,7 @@ input::-webkit-input-placeholder{
     flex-direction: column;
 }
    .footer-content{
-    width: 100%;
     padding-bottom: 0px;
+    width: auto;
 }
 }
