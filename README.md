@@ -45,4 +45,4 @@ This project was completed as part of the Web Developper training program at [Op
 
 Use of `Figma` for design.<br>
 Use of `HTML` for development and `CSS` for styling.<br>
-Use of `GitHub` for version control.<br>
+Use of `Git` for version control.<br>
